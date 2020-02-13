@@ -20,7 +20,7 @@ class Pokedex extends Component {
         <p>{this.props.isWinner ? 'WINNER' : 'LOSER'}</p>
         <div className="Pokedex-cards">
           {this.props.pokemon.map((p) => (
-            <Pokecard id={p.id} name={p.name} type={p.type} exp={p.base_base_experience}/>
+            <Pokecard id={p.id} name={p.name} type={p.type} exp={p.base_experience}/>
           ))}
         </div>
       </div>
